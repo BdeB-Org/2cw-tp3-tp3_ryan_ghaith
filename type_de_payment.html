@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélection de la Carte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sélectionnez votre type de payment</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="type_de_payment.html">Sélection de la Carte</a></li>
+                <li><a href="transfer.html">Transfert</a></li>
+                <li><a href="profile.html">Profil Utilisateur</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Choisissez le type de carte pour le transfert</h2>
+        <form action="transfer.html" method="post">
+            <label for="card-type">Type de Carte :</label>
+            <select id="card-type" name="card-type">
+                <option value="credit">Carte de Crédit</option>
+                <option value="debit">Carte de Débit</option>
+            </select>
+            <br>
+            <label for="card-number">Numéro de Carte :</label>
+            <input type="text" id="card-number" name="card-number" required>
+            <br>
+            <label for="expiry-date">Date d'Expiration :</label>
+            <input type="month" id="expiry-date" name="expiry-date" required>
+            <br>
+            <button type="submit">Continuer</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Transfert d'Argent</p>
+    </footer>
+</body>
+</html>
